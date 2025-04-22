@@ -137,7 +137,7 @@ export default function ConnectWallet({ className }: { className?: string }) {
                   onClick={
                     isMissingWallet
                       ? () => null
-                      : () => handleConnect(wallet.name)
+                      : () => handleConnect(wallet.name as typeof UNISAT | typeof MAGIC_EDEN | typeof OYL | typeof ORANGE | typeof PHANTOM | typeof LEATHER | typeof XVERSE | typeof WIZZ | typeof OKX)
                   }
                   variant="ghost"
                   className={cn(
